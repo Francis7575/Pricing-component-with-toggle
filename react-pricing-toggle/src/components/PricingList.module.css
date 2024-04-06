@@ -4,6 +4,9 @@
     cursor: pointer;
 }
 
+.toggleBtn:hover svg rect {
+    fill: #A2A7F0; 
+}
 .section {
     display: flex;
     flex-direction: column;
@@ -173,11 +176,27 @@ main {
     border: none;
     letter-spacing: 0.081em;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .basicAndMasterBtn {
     color: #fff;
     background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+}
+
+.professionalBtn:hover,
+.basicAndMasterBtn:hover {
+    background: none;
+}
+
+.professionalBtn:hover {
+    color: #fff;
+    border: 1px solid #FFF;
+}
+
+.basicAndMasterBtn:hover {
+    color: #6D72DE;
+    border: 1px solid #6D72DE;
 }
 
 @media (min-width: 64em) {
@@ -227,9 +246,11 @@ main {
     .dataWrapper {
         gap: 0;
     }
+
     .container {
         min-width: 21.87rem;
     }
+
     .professionalContainer {
         padding: 3.37rem 1.93rem;
         border-radius: 10px;
@@ -250,4 +271,6 @@ main {
     .planPrice {
         font-size: 4.5rem;
     }
+
+
 }
