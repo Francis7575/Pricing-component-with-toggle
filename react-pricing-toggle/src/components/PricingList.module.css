@@ -1,0 +1,276 @@
+.toggleBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.toggleBtn:hover svg rect {
+    fill: #A2A7F0; 
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 4rem 1.5rem 4.43rem 1.5rem;
+}
+
+.h1,
+.dataPeriods {
+    color: #6E728E;
+    font-weight: 700;
+}
+
+.h1 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.dataPeriods {
+    font-size: .93rem;
+    opacity: 0.5;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.patternBottom {
+    display: none;
+    z-index: -1;
+}
+
+.patternTop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.dataWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.container {
+    padding: 1.93rem 1.81rem 1.9rem 1.81rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 20.43rem;
+}
+
+.professionalContainer {
+    background: linear-gradient(135deg, #A2A7F0 0.06%, #696EDD 100.06%);
+    box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.50);
+}
+
+.planName {
+    margin-bottom: 1.5rem;
+}
+
+.professionalPlanName {
+    font-size: 1.12rem;
+    line-height: 1.75rem;
+}
+
+.professionalPlanPrice {
+    font-size: 4.5rem;
+}
+
+.planDollarSign {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .46rem;
+    margin-bottom: 2rem;
+}
+
+.professionalPlanName,
+.professionalPlanPrice,
+.professionalDollarSign {
+    color: #fff;
+    font-weight: 700;
+}
+
+.basicAndMasterDollarSign {
+    color: #4A4D60;
+}
+
+.professionalListItem {
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.professionalListItem:nth-child(3) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: .75rem;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.basicAndMasterContainer {
+    background: #fff;
+    box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.50);
+}
+
+.basicAndMasterName {
+    color: #6E728E;
+    font-size: 1.12rem;
+    font-weight: 700;
+}
+
+.basicAndMasterPrice {
+    color: #4A4D60;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: -2.16px;
+}
+
+.basicAndMasterli {
+    color: #6E728E;
+    border-top: 1px solid rgba(110, 114, 142, 0.25);
+}
+
+.basicAndMasterli:nth-child(3) {
+    border-bottom: 1px solid rgba(110, 114, 142, 0.25);
+    padding-bottom: .75rem;
+}
+
+.listItem {
+    font-size: .93rem;
+    padding-top: .75rem;
+    font-weight: 700;
+}
+
+.professionalBtn {
+    color: #6D72DE;
+    background: #FFF;
+}
+
+.professionalBtn,
+.basicAndMasterBtn {
+    font-size: .81rem;
+    padding: .87rem 0;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    letter-spacing: 0.081em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.basicAndMasterBtn {
+    color: #fff;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+}
+
+.professionalBtn:hover,
+.basicAndMasterBtn:hover {
+    background: none;
+}
+
+.professionalBtn:hover {
+    color: #fff;
+    border: 1px solid #FFF;
+}
+
+.basicAndMasterBtn:hover {
+    color: #6D72DE;
+    border: 1px solid #6D72DE;
+}
+
+@media (min-width: 64em) {
+    .patternBottom {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+
+    .h1 {
+        padding-top: 4.43rem;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .section {
+        padding-bottom: 2.5rem;
+    }
+
+    .dataWrapper {
+        flex-direction: row;
+        min-height: 20rem;
+        align-items: center;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .professionalContainer {
+        padding: 1.93rem 1.81rem 1.9rem 1.81rem;
+    }
+
+    .basicAndMasterContainer {
+        padding: .93rem .81rem .9rem .81rem;
+    }
+
+    .planPrice {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 90em) {
+    .dataWrapper {
+        gap: 0;
+    }
+
+    .container {
+        min-width: 21.87rem;
+    }
+
+    .professionalContainer {
+        padding: 3.37rem 1.93rem;
+        border-radius: 10px;
+    }
+
+    .basicContainer {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .masterContainer {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .basicAndMasterContainer {
+        padding: 1.93rem;
+    }
+
+    .planPrice {
+        font-size: 4.5rem;
+    }
+
+
+}
